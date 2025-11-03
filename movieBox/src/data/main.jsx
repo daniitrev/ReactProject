@@ -12,6 +12,26 @@ export const COMMENTS = [
     comment: "The guy who plays the cop is really sexy",
     like: "3,629",
   },
+  {
+    id: 1,
+    image: bugonia,
+    title: "Bugonia",
+    year: 2025,
+    user_name: "stavvybaby",
+    rate: Apple,
+    comment: "The guy who plays the cop is really sexy",
+    like: "3,629",
+  },
+  {
+    id: 1,
+    image: bugonia,
+    title: "Bugonia",
+    year: 2025,
+    user_name: "stavvybaby",
+    rate: Apple,
+    comment: "The guy who plays the cop is really sexy",
+    like: "3,629",
+  },
 ];
 
 export const FLIST = [

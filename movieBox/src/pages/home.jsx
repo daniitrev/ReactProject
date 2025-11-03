@@ -96,7 +96,11 @@ const Home = () => {
             </p>
           </article>
 
-          <article>
+          <article className="flex flex-col gap-2">
+            <div className="flex items-center justify-between uppercase text-[rgb(195,201,214)]">
+              <span className="">Popular reviews this week</span>
+              <span className="text-xs">More</span>
+            </div>
             {COMMENTS.map((comment) => (
               <Comments
                 key={comment.id}
