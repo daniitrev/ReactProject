@@ -2,10 +2,11 @@ import PosterCard from "../components/poster";
 import FeatureCard from "../components/featureCard";
 import FilmList from "../components/filmList";
 import Comments from "../components/comment";
+import Inner from "../components/inner";
 import AppleIcon from "../assets/icons/apple.svg?react";
 import AndroidIcon from "../assets/icons/android.svg?react";
 import { Link } from "react-router-dom";
-import { POSTERS, FLIST, FCARD, COMMENTS } from "../data/main";
+import { POSTERS, FLIST, FCARD, COMMENTS, INNERS } from "../data/main";
 
 const Home = () => {
   return (
@@ -113,6 +114,27 @@ const Home = () => {
                 like={comment.like}
               />
             ))}
+          </article>
+
+          <article className="flex flex-col gap-5">
+            <div className="flex justify-between text-[rgb(195,201,214)] border-b border-gray-500 pb-3">
+              <span>Recent Stories</span>
+              <span className="uppercase">All HQs</span>
+            </div>
+
+            <div className="flex items-start gap-10">
+              {INNERS.map((inner) => (
+                <Inner
+                  key={inner.div}
+                  image={inner.image}
+                  icon={inner.icon}
+                  title={inner.title}
+                  news={inner.news}
+                  description={inner.description}
+                  year={inner.year}
+                />
+              ))}
+            </div>
           </article>
         </div>
       </div>
